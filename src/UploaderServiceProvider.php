@@ -3,7 +3,7 @@
 use Illuminate\Support\ServiceProvider;
 use Moh8med\Uploader\Uploader;
 
-echo 'file loaded. <br><br>';
+echo 'Provider loaded. <br><br>';
 
 class UploaderServiceProvider extends ServiceProvider {
 
