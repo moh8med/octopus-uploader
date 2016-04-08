@@ -3,8 +3,6 @@
 use Illuminate\Support\ServiceProvider;
 use Moh8med\Uploader\Uploader;
 
-echo 'Provider loaded. <br><br>';
-
 class UploaderServiceProvider extends ServiceProvider {
 
 	/**
@@ -21,15 +19,9 @@ class UploaderServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		echo 'register method <br><br>';
 		$this->app->singleton('uploader', function () {
-			echo 'register method > app singleton <br><br>';
 			return new Uploader;
 		});
-
-		// $this->app['uploader'] = $this->app->share(function($app) {
-		// 	return new Uploader;
-		// });
 	}
 
 	/**

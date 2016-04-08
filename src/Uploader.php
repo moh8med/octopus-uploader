@@ -10,8 +10,6 @@ use Moh8med\Uploader\UploaderInterface;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local as FilesystemAdapter;
 
-echo 'Uploader loaded <br><br>';
-
 class Uploader implements UploaderInterface {
 
 	private $request;
@@ -26,8 +24,6 @@ class Uploader implements UploaderInterface {
 
 		// Load helpers
 		require_once __DIR__.'/helpers.php';
-
-		echo 'initialized <br> <br>';
 	}
 
 	public function upload($name)
