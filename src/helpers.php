@@ -1,6 +1,6 @@
 <?php
 
-function foo_function()
+function fooz_function()
 {
 	
 }
