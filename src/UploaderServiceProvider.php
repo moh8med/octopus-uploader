@@ -21,7 +21,6 @@ class UploaderServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		require_once __DIR__.'/helpers.php';
 		echo 'register method <br><br>';
 		$this->app->singleton('uploader', function () {
 			echo 'register method > app singleton <br><br>';

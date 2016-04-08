@@ -22,6 +22,9 @@ class Uploader implements UploaderInterface {
 
 		$this->filesystem = new Filesystem(new FilesystemAdapter(config('app.upload_directory')));
 
+		// Load helpers
+		require_once __DIR__.'/helpers.php';
+
 		echo 'initialized <br> <br>';
 	}
 
